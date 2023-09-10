@@ -27,11 +27,11 @@ MAGISK_VER_CODE=26300
 ###################
 
 ui_print() {
-  if $BOOTMODE; then
+  #if $BOOTMODE; then
     echo "$1"
-  else
-    echo -e "ui_print $1\nui_print" >> /proc/self/fd/$OUTFD
-  fi
+  #else
+  #  echo -e "ui_print $1\nui_print" >> /proc/self/fd/$OUTFD
+  #fi
 }
 
 toupper() {
